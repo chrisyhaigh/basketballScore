@@ -3,6 +3,7 @@ body {
     padding: 30px;
     margin: auto;
 }
+
 .image-container {
     display: flex;
     justify-content: center;
@@ -66,6 +67,13 @@ body {
     font-size: 5rem;
 }
 
+.reset-home-container {
+    padding: 5px;
+}
+
+.reset-guest-container {
+    padding: 5px;
+}
 
 .clock-container {
     padding: 20px;
