@@ -36,7 +36,7 @@ body {
 .home-score-container {
     background-color: black;
     height: 100px;
-    width: 160px;
+    width: 175px;
     margin: 1rem;
     border: 2px dotted white;
 }
@@ -44,7 +44,7 @@ body {
 .guest-score-container {
     background-color: black;
     height: 100px;
-    width: 160px;
+    width: 175px;
     margin: .875rem;
     border: 2px dotted white;
 }
