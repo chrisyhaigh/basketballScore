@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="libraries\bootstrap\bootstrap.min.css">
+    <link rel="stylesheet" href="libraries\bootstrap\bootstrap.min.css.map">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bellota+Text&family=Cantarell&family=Inter&family=Karla&family=Manrope&family=Orbitron&family=Poppins&family=Quicksand:wght@400;700&family=Readex+Pro:wght@500&family=Rubik&family=Source+Sans+3&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="image-container">
+        <img class="basket-net" src="images\basketball-net-png-basketball-ring-net-png-1679.png">
+    </div>
+    <div class="box-container">
+        <div class="team-container">
+            <div class="home-title">
+                <h3>HOME</h3>
+            </div>
+            <div class="home-score-container">
+                <h3 class="home-score">30</h3>
+            </div>
+            <div class="pointbuttons">
+                <button class="plusOne">+1</button>
+                <button class="plusTwo">+2</button>
+                <button class="plusThree">+3</button>
+            </div>
+        </div>
+        <div class="team-container">
+            <div class="guest-title">
+                <h3>GUEST</h3>
+            </div>
+            <div class="guest-score-container">
+                <h3 class="guest-score">4</h3>
+            </div>
+            <div class="pointbuttons">
+                <button class="plusOne">+1</button>
+                <button class="plusTwo">+2</button>
+                <button class="plusThree">+3</button>
+            </div>
+        </div>
+    </div>
+    <div class="clock-container">
+        <div class="shot-name">
+            <h4>SHOT CLOCK</h4>
+        </div>
+        <div class="shot-clock">
+            <h4 class="clock-time">24</h4>
+        </div>
+        <div class="clock-buttons">
+            <button class="start-clock">Start</button>
+            <button class="reset-clock">Reset</button>
+        </div>
+    </div>
+    <script src="libraries\jquery\jquery-3.7.0.min.js"></script>
+    <script src="libraries\bootstrap\bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
