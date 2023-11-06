@@ -102,6 +102,37 @@ $('.guestPlusThree').click(function(){
 
 // Shot Clock Start Button
 
+let interval;
+
+function startShotClock() {
+    const startTime = parseInt($('.clock-time').html(), 10);
+
+    if (isNaN(startTime)) {
+        console.error('Clocktime is not a valid number')
+        return;
+    }
+
+    let clockTime = startTime;
+
+    interval = setInterval(function() {
+        if (clockTime <= 0 ) {
+            clearInterval(interval);
+        } else if (clockTime <= 10) {
+            clockTime--;
+            $('.clock-time').html('0' + clockTime.toString());
+        } else {
+            clockTime--;
+            $('.clock-time').html(clockTime.toString());
+        } 
+    }, 1000);
+    
+}
+
+$('.start-clock').click(function() {
+    startShotClock();
+});
+
+
 //Reset Buttons
 
 function resetHomeScore () {
@@ -126,4 +157,5 @@ $('.reset-guest-score').click(function() {
 
 $('.reset-clock').click(function() {
     resetShotClock();
+    clearInterval(interval);
 })
